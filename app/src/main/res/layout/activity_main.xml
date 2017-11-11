@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.hemm.liftapp.MainActivity">
+
+
+    <ImageView
+        android:layout_height="150sp"
+        app:srcCompat="@mipmap/fb"
+        android:id="@+id/facebook"
+        android:layout_width="150sp"
+        android:src="@mipmap/fb"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="84dp" />
+
+    <ImageView
+        android:layout_width="150sp"
+        android:layout_height="150sp"
+        app:srcCompat="@mipmap/linkedin"
+        android:id="@+id/linkedin"
+        android:src="@mipmap/linkedin"
+        android:layout_above="@+id/twitter"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="24dp" />
+
+    <TextView
+        android:text="Get all your social accounts in one hub!"
+        android:id="@+id/appInfo"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:fontFamily="casual"
+        android:textSize="17sp"
+        android:textAllCaps="false"
+        android:textStyle="normal|italic"
+        android:layout_width="700sp"
+        android:layout_height="50sp"
+        android:layout_above="@+id/linkedin"
+        android:layout_alignParentStart="true"
+        android:textAlignment="center" />
+
+    <ImageView
+        android:layout_height="140sp"
+        app:srcCompat="@mipmap/instagram"
+        android:id="@+id/instagaram"
+        android:layout_width="140sp"
+        android:layout_marginEnd="20dp"
+        android:src="@mipmap/instagram"
+        android:layout_alignBottom="@+id/linkedin"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_height="140sp"
+        app:srcCompat="@mipmap/twitter"
+        android:id="@+id/twitter"
+        android:layout_width="140sp"
+        android:src="@mipmap/twitter"
+        android:layout_alignBottom="@+id/facebook"
+        android:layout_alignStart="@+id/instagaram" />
+
+    <TextView
+        android:text="LIFT - Go Social!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/appBar"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:textAlignment="center"
+        android:layout_alignParentEnd="true"
+        android:textSize="30sp"
+        android:textStyle="normal|bold"
+        android:textAllCaps="false"
+        android:fontFamily="sans-serif-smallcaps" />
+
+    <Button
+        android:text="Launch Lift"
+        android:layout_width="150sp"
+        android:layout_height="40sp"
+        android:id="@+id/launch_btn"
+        android:layout_marginBottom="13dp"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:background="@color/colorPrimary"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:elevation="0dp"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        android:textAllCaps="false"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:fontFamily="sans-serif-smallcaps"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
