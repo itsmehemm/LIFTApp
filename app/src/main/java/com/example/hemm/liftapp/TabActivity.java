@@ -1,12 +1,8 @@
 package com.example.hemm.liftapp;
 
 import android.app.Activity;
-import android.app.ProgressDialog;
-import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.KeyEvent;
-import android.view.Menu;
 import android.view.View;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
@@ -31,7 +27,7 @@ public class TabActivity extends Activity {
     WebSettings facebookViewSettings;
     WebSettings twitterViewSettings;
 
-    String linkedinURL = "http://www.linkedin.com";
+    String linkedinURL = "https://www.linkedin.com/";
     String instagramURL = "https://www.instagram.com";
     String facebookURL = "https://www.facebook.com";
     String twitterURL = "https://www.twitter.com";
